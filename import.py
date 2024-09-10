@@ -2,11 +2,11 @@ import sqlite3
 import pandas as pd
 
 # Step 1: Connect to the SQLite database (it will create the database if it doesn't exist)
-conn = sqlite3.connect('/Users/aryanjain/Documents/python_ex_DS593/health_events_data.db')
+conn = sqlite3.connect('/Users/aryanjain/Documents/pyexDS593/health_events_data.db')
 cursor = conn.cursor()
 
 # Step 2: Load the CSV file using Pandas
-df = pd.read_csv('/Users/aryanjain/Documents/python_ex_DS593/funny_epidemiological_events.csv')
+df = pd.read_csv('/Users/aryanjain/Documents/pyexDS593/funny_epidemiological_events.csv')
 
 # Step 3: Create a table in SQLite
 cursor.execute('''
